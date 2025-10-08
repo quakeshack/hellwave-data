@@ -1,0 +1,5 @@
+maps/*.bak
+maps/*.log
+maps/*.prt
+maps/*.bsp
+maps/*.autosave.*
