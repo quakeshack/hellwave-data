@@ -13,17 +13,15 @@
     "LITE4": {
       "luminance": "textures/doom/lite4_l.png"
     },
-    "ICKDOOR1x": {
-      "diffuse": "textures/doom/test/ickdoor1.png",
-      "normal": "textures/doom/test/ickdoor1_local.png"
-    },
-    "STARTAN3x": {
+    "DOOMWALL03": {
       "diffuse": "textures/doom/test/doomwall03_b01_fin.png",
       "specular": "textures/doom/test/doomwall03_s01_fin.png",
       "normal": "textures/doom/test/doomwall03_local01_fin.png"
     },
-    "DEV_GLASS": {
-      "diffuse": "textures/doom/dev_glass.png"
+    "BRICK7787": {
+      "diffuse": "textures/doom/test/7787_d.jpg",
+      "normal": "textures/doom/test/7787_n.png",
+      "specular": "textures/doom/test/7787_s.jpg"
     }
   }
 }
