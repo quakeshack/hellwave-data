@@ -15,7 +15,7 @@ all: $(BSP_FILES)
 %.bsp: %.map
 	$(QBSP) -basedir $(BASEDIR) -gamedir $(GAMEDIR) -transwater -litwater -splitturb $<
 	$(VIS) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $<
-	$(LIGHT) -basedir $(BASEDIR) -gamedir $(GAMEDIR) -extra4 -lit -novanilla $<
+	$(LIGHT) -basedir $(BASEDIR) -gamedir $(GAMEDIR) -extra4 -bspx -novanilla -wrnormals $<
 
 clean:
 	rm -f $(GAMEDIR)/maps/*.bsp

@@ -6,14 +6,19 @@ uniform vec3 uViewOrigin;
 uniform mat3 uViewAngles;
 uniform mat4 uPerspective;
 
+uniform bool uUseVertexLighting;
+
 uniform float uTime;
 // fog uniforms
 uniform vec3 uFogColor;
 uniform vec4 uFogParams; // start, end, density, mode
 
 attribute vec3 aPosition;
+// attribute vec3 aNormal;
 attribute vec4 aTexCoord;
 attribute vec4 aLightStyle;
+// attribute vec3 aTangent;
+// attribute vec3 aBitangent;
 
 varying vec4 vTexCoord;
 varying vec4 vLightStyle;
@@ -27,8 +32,10 @@ void main(void) {
 
   vec3 position = uViewAngles * (uAngles * aPositionA + uOrigin - uViewOrigin);
   gl_Position = uPerspective * vec4(position.xz, -position.y, 1.0);
+
   vTexCoord = aTexCoord;
   vLightStyle = aLightStyle;
+
   // compute fog based on distance from camera
   float dist = length((uAngles * aPositionA + uOrigin) - uViewOrigin);
   if (uFogParams.w < 0.0) {
