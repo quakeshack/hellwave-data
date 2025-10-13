@@ -33,7 +33,8 @@
     "COMPTALL": {
       "luminance": "textures/doom/comptall_l.png",
       "specular": "textures/doom/comptall_s.png",
-      "normal": "textures/doom/comptall_n.png"
+      "normal": "textures/doom/comptall_n.png",
+      "diffuse": "textures/doom/comptall_d.png"
     },
     "LITEBLU2": {
       "luminance": "textures/doom/liteblu2_l.png"
