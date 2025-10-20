@@ -6,7 +6,7 @@ uniform vec3 uViewOrigin;
 uniform mat3 uViewAngles;
 uniform mat4 uPerspective;
 
-uniform bool uUseVertexLighting;
+uniform bool uPerformDotLighting;
 
 uniform float uTime;
 // fog uniforms

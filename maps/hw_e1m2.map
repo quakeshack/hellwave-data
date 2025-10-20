@@ -10,6 +10,7 @@
 "_sunlight2_color" "171 139 163"
 "_bounce" "1"
 "_dirt" "1"
+"_bouncestyled" "1"
 // brush 0
 {
 ( 1464 1632 264 ) ( 1544 1632 264 ) ( 1544 1632 248 ) SLIPBOTSD 8 0 90 -1 1

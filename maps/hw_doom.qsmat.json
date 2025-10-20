@@ -8,7 +8,9 @@
       "luminance": "textures/doom/flat_cons1_5_l.png"
     },
     "FLAT_CONS1_1": {
-      "luminance": "textures/doom/flat_cons1_1_l.png"
+      "luminance": "textures/doom/flat_cons1_1_l.png",
+      "normal": "textures/doom/flat_cons1_1_n.png",
+      "specular": "textures/doom/flat_cons1_1_s.png"
     },
     "FLAT_TLITE6_1": {
       "luminance": "textures/doom/flat_tlite6_1_l.png"
@@ -49,9 +51,33 @@
       "normal": "textures/doom/test/7787_n.png",
       "specular": "textures/doom/test/7787_s.jpg"
     },
+    "STARGR1": {
+      "diffuse": "textures/test/doomwall03_b01_fin.png",
+      "specular": "textures/test/doomwall03_s01_fin.png",
+      "normal": "textures/test/doomwall03_local01_fin.png"
+    },
     "STARTAN3": {
       "normal": "textures/doom/startan3_n.png",
       "specular": "textures/doom/startan3_s.png"
+    },
+    "STARG3": {
+      "normal": "textures/doom/startan3_n.png",
+      "specular": "textures/doom/startan3_s.png"
+    },
+    "FLAT_FLOOR4_8": {
+      "diffuse": "textures/doom/flat_floor4_8_d.png",
+      "normal": "textures/doom/flat_floor4_8_n.png",
+      "specular": "textures/doom/flat_floor4_8_s.png"
+    },
+    "FLAT_FLOOR5_1": {
+      "diffuse": "textures/doom/flat_floor4_8_d.png",
+      "normal": "textures/doom/flat_floor4_8_n.png",
+      "specular": "textures/doom/flat_floor4_8_s.png"
+    },
+    "FLAT_FLOOR5_3": {
+      "diffuse": "textures/doom/flat_floor4_8_d.png",
+      "normal": "textures/doom/flat_floor4_8_n.png",
+      "specular": "textures/doom/flat_floor4_8_s.png"
     }
   }
 }
