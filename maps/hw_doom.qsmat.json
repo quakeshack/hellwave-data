@@ -78,6 +78,11 @@
       "diffuse": "textures/doom/flat_floor4_8_d.png",
       "normal": "textures/doom/flat_floor4_8_n.png",
       "specular": "textures/doom/flat_floor4_8_s.png"
+    },
+    "METAL": {
+      "diffuse": "textures/doom/metal_d.png",
+      "normal": "textures/doom/metal_n.png",
+      "specular": "textures/doom/metal_s.png"
     }
   }
 }
