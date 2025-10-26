@@ -51,7 +51,7 @@
       "normal": "textures/doom/test/7787_n.png",
       "specular": "textures/doom/test/7787_s.jpg"
     },
-    "STARGR1": {
+    "doomwall03": {
       "diffuse": "textures/test/doomwall03_b01_fin.png",
       "specular": "textures/test/doomwall03_s01_fin.png",
       "normal": "textures/test/doomwall03_local01_fin.png"
@@ -83,6 +83,33 @@
       "diffuse": "textures/doom/metal_d.png",
       "normal": "textures/doom/metal_n.png",
       "specular": "textures/doom/metal_s.png"
+    },
+    "SP_ROCK1": {
+      "normal": "textures/doom/rock_n.png",
+      "specular": "textures/doom/rock_s.png"
+    },
+    "SP_ROCK2": {
+      "normal": "textures/doom/rock_n.png",
+      "specular": "textures/doom/rock_s.png"
+    },
+    "ROCKRED1": {
+      "normal": "textures/doom/rock_n.png",
+      "specular": "textures/doom/rock_s.png"
+    },
+    "ROCKRED2": {
+      "normal": "textures/doom/rock_n.png",
+      "specular": "textures/doom/rock_s.png"
+    },
+    "ROCKRED3": {
+      "normal": "textures/doom/rock_n.png",
+      "specular": "textures/doom/rock_s.png"
+    },
+    "DEV_GLASS": {
+      "diffuse": "textures/test/dev_glass_d.png"
+    },
+    "BROWN1": {
+      "normal": "textures/doom/brown1_n.png",
+      "specular": "textures/doom/brown1_s.png"
     }
   }
 }
