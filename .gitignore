@@ -2,4 +2,6 @@ maps/*.bak
 maps/*.log
 maps/*.prt
 maps/*.bsp
+maps/*.lit
+maps/*.pts
 maps/*.autosave.*
