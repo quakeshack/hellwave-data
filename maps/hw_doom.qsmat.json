@@ -105,7 +105,8 @@
       "specular": "textures/doom/rock_s.png"
     },
     "DEV_GLASS": {
-      "diffuse": "textures/test/dev_glass_d.png"
+      "diffuse": "textures/test/dev_glass_d.png",
+      "flags": ["MF_TRANSPARENT"]
     },
     "BROWN1": {
       "normal": "textures/doom/brown1_n.png",
