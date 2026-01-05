@@ -13,6 +13,7 @@
 "_dirt" "1"
 "worldtype" "2"
 "message" "Computer Station of the Doomed"
+"skyname" "doom"
 // brush 0
 {
 ( -448 504 0 ) ( -448 440 0 ) ( -512 504 0 ) FLAT_FLAT20 [ 0 1 0 8 ] [ 1 0 0 0 ] -0 1 1
