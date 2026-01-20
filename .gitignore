@@ -4,4 +4,6 @@ maps/*.prt
 maps/*.bsp
 maps/*.lit
 maps/*.pts
+maps/*.nav
+maps/*.texinfo.json
 maps/*.autosave.*

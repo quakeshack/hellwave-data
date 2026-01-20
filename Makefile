@@ -1,13 +1,15 @@
 
 GAME=hellwave
+BASE=id1
 
-BASEDIR := ../id1
+BASEDIR := ../$(BASE)
 GAMEDIR := .
 
 MAPS := $(filter-out %.autosave.map,$(wildcard $(GAMEDIR)/maps/*.map))
 BSP_FILES := $(MAPS:.map=.bsp)
 NAV_FILES := $(MAPS:.map=.nav)
 
+DEDICATED=../../dedicated.mjs
 TOOLS_DIR := ../../../tools/ericw-tools
 QBSP := $(TOOLS_DIR)/qbsp
 VIS := $(TOOLS_DIR)/vis
@@ -27,7 +29,7 @@ all: $(BSP_FILES) $(NAV_FILES)
 
 %.nav: %.map
 	@mapname=$$(basename "$<" .map); \
-	../../dedicated.mjs -noserver -game $(GAME) +nav_build_process 1 +map $$mapname
+	$(DEDICATED) -noserver -basedir $(BASE) -game $(GAME) +nav_build_process 1 +map $$mapname
 
 clean:
 	rm -f $(GAMEDIR)/maps/*.bsp
