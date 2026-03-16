@@ -12,6 +12,7 @@
 "_dirt" "1"
 "_bouncestyled" "1"
 "_qs_autogen_fog" "1"
+"_wateralpha" ".8"
 // brush 0
 {
 ( 1464 1632 264 ) ( 1544 1632 264 ) ( 1544 1632 248 ) SLIPBOTSD 8 0 90 -1 1
