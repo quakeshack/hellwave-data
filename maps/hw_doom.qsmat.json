@@ -18,9 +18,6 @@
     "FLAT_TLITE6_4": {
       "luminance": "textures/doom/flat_tlite6_1_l.png"
     },
-    "FLAT_TLITE6_5": {
-      "luminance": "textures/doom/flat_tlite6_1_l.png"
-    },
     "FLAT_FLAT5_4": {
       "normal": "textures/doom/flat_flat5_4_n.png",
       "specular": "textures/doom/flat_flat5_4_s.png"
