@@ -22,11 +22,12 @@ LGRIDSIZE=-lightgrid_dist 16 16 16
 LGRID=-lightgrid
 QUALITY=-extra4
 FLAGS=-lowpriority
+ADDMAPS=-add $(GAMEDIR)/maps/_hw_lights.map
 
 all: $(BSP_FILES) $(NAV_FILES)
 
 %.bsp: %.map
-	$(QBSP) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) -transwater -litwater -splitturb -nosoftware -bspx -bmodelcontents -$(FORMAT) $<
+	$(QBSP) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) $(ADDMAPS) -transwater -litwater -splitturb -nosoftware -bspx -bmodelcontents -$(FORMAT) $<
 	$(VIS) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) -noambientwater -noambientslime -noambientlava $<
 	$(LIGHT) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) -bspxonly -bspx -novanilla -wrnormals -lightmap_scale $(LMSCALE) $(LGRID) $(LGRIDSIZE) $(QUALITY) $<
 

@@ -107,12 +107,6 @@
       "normal": "textures/doom/rock_n.png",
       "specular": "textures/doom/rock_s.png"
     },
-    "DEV_GLASS": {
-      "diffuse": "textures/test/dev_glass_d.png",
-      "specular": "textures/test/dev_glass_s.jpg",
-      "normal": "textures/test/dev_glass_n.png",
-      "flags": ["MF_TRANSPARENT"]
-    },
     "*slime0": {
       "flags": ["MF_FULLBRIGHT", "MF_TURBULENT"]
     },
