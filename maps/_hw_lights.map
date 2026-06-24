@@ -144,3 +144,11 @@
 "_surface" "+0_box_top"
 "_color" "200 60 20"
 }
+// entity 12
+{
+"classname" "light"
+"origin" "-504 7320 5168"
+"light" "120"
+"_surface" "*lava1"
+"_color" "253 38 10"
+}

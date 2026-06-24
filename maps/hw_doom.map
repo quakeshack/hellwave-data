@@ -19,6 +19,7 @@
 "_sunlight2" "300"
 "_slimealpha" ".8"
 "_qs_mat" "materials/doom.qsmat.json;materials/test.qsmat.json"
+"_qs_waterfog" "1"
 // brush 0
 {
 ( 192 456 136 ) ( 192 -128 136 ) ( -32 456 136 ) FLAT_CEIL3_5 [ 0 1 0 0 ] [ 1 0 0 48 ] -0 1 1
