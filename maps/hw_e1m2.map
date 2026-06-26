@@ -13741,7 +13741,7 @@
 {
 "classname" "func_fog"
 "fog_density" "0.0025"
-"fog_color" "60 60 60"
+"fog_color" "37 27 14"
 // brush 0
 {
 ( 1840 1504 204 ) ( 1840 960 204 ) ( 1168 1504 204 ) TNNL_LGTBRD2 0 0 0 1 1
@@ -13756,7 +13756,7 @@
 {
 "classname" "func_fog"
 "fog_density" "0.0025"
-"fog_color" "60 60 60"
+"fog_color" "37 27 14"
 // brush 0
 {
 ( 544 392 228 ) ( 544 -152 228 ) ( -128 392 228 ) TNNL_LGTBRD2 24 8 0 1 1
@@ -13771,7 +13771,7 @@
 {
 "classname" "func_fog"
 "fog_density" "0.0025"
-"fog_color" "60 60 60"
+"fog_color" "37 27 14"
 // brush 0
 {
 ( 544 392 228 ) ( 544 -152 228 ) ( -128 392 228 ) TNNL_LGTBRD2 24 8 0 1 1
@@ -13786,7 +13786,7 @@
 {
 "classname" "func_fog"
 "fog_density" "0.0025"
-"fog_color" "60 60 60"
+"fog_color" "37 27 14"
 // brush 0
 {
 ( 792 456 228 ) ( 792 -88 228 ) ( 120 456 228 ) TNNL_LGTBRD2 0 8 0 1 1
