@@ -108,7 +108,10 @@
       "specular": "textures/doom/rock_s.png"
     },
     "*slime0": {
-      "flags": ["MF_FULLBRIGHT", "MF_TURBULENT"]
+      "flags": ["MF_FULLBRIGHT", "MF_TURBULENT"],
+      "normal": "textures/doom/nuke_normal.png",
+      "specular": "textures/doom/nuke_specular.png",
+      "diffuse": "textures/doom/nuke_diffuse.png"
     },
     "BROWN1": {
       "normal": "textures/doom/brown1_n.png",
