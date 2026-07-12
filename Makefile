@@ -25,12 +25,23 @@ FLAGS=-lowpriority
 BMODELFLAGS=-bspx -bmodelcontents
 ADDMAPS=-add $(GAMEDIR)/maps/_hw_lights.map
 
+# -bspxonly/-novanilla skip the vanilla lighting lump in favor of BSPX RGB data,
+# which is required for BSP29/BSP2 (whose native lump is mono-only) but breaks
+# Quake II output: Q2's native LIGHTING lump is already RGB, and there is no
+# BSPX lightmap-equivalent lump for it to fall back to, so -novanilla silently
+# leaves the compiled BSP38 with zero lighting data. Only apply them for Q1-family formats.
+ifeq ($(FORMAT),q2bsp)
+LIGHT_BSPXFLAGS=
+else
+LIGHT_BSPXFLAGS=-bspxonly -novanilla
+endif
+
 all: $(BSP_FILES) $(NAV_FILES)
 
 %.bsp: %.map
 	$(QBSP) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) $(ADDMAPS) -transwater -litwater -splitturb -nosoftware $(BMODELFLAGS) -$(FORMAT) $<
 	$(VIS) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) -noambientwater -noambientslime -noambientlava $<
-	$(LIGHT) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) -bspxonly -bspx -novanilla -wrnormals -lightmap_scale $(LMSCALE) $(LGRID) $(LGRIDSIZE) $(QUALITY) $<
+	$(LIGHT) -basedir $(BASEDIR) -gamedir $(GAMEDIR) $(FLAGS) $(LIGHT_BSPXFLAGS) -bspx -bspxlux -wrnormals -lightmap_scale $(LMSCALE) $(LGRID) $(LGRIDSIZE) $(QUALITY) $<
 
 %.nav: %.map
 	@mapname=$$(basename "$<" .map); \
