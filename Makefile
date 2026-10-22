@@ -9,7 +9,7 @@ MAPS := $(filter-out $(GAMEDIR)/maps/autosave.map %.autosave.map,$(wildcard $(GA
 BSP_FILES := $(MAPS:.map=.bsp)
 NAV_FILES := $(MAPS:.map=.nav)
 
-DEDICATED := node --preserve-symlinks --preserve-symlinks-main ../../dedicated.mjs
+DEDICATED := node --preserve-symlinks --preserve-symlinks-main ../../dist/dedicated/dedicated.mjs
 
 TOOLS_DIR := ../../../tools/ericw-tools
 QBSP := $(TOOLS_DIR)/qbsp
