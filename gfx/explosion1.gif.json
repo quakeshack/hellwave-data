@@ -1,0 +1,11 @@
+{
+  "scale": 0.15,
+  "blend": "additive",
+  "colorKey": { "color": [0, 0, 0], "tolerance": 16 },
+  "repeat": 1,
+  "interpolate": true,
+  "sequences": [
+    { "name": "burst", "from": 6, "to": 10 },
+    { "name": "fade", "from": 0, "to": 4 }
+  ]
+}

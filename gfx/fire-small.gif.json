@@ -1,0 +1,9 @@
+{
+  "scale": 0.125,
+  "origin": [253, 369],
+  "blend": "additive",
+  "orientation": "parallelUpright",
+  "interpolate": true,
+  "colorKey": { "color": [0, 0, 0], "tolerance": 16 },
+  "phase": "random"
+}
