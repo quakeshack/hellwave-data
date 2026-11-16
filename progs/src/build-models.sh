@@ -7,7 +7,8 @@
 #
 # progs/src/grips/*.json place a weapon in the hand: where it sits in the space of the player's `tag_weapon`
 # (or `tag_axe`). They started as the output of qs-tools' fit_grip.py (the world model fitted onto the gun that is
-# built into the LibreQuake player) and are meant to be adjusted by hand: translation, rotation in degrees, scale.
+# built into the LibreQuake player, `grip --scale 0.66`: the world models are too big for a hand at their own size) and are
+# meant to be adjusted by hand: translation, rotation in degrees, scale.
 set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LQ="${LQ:-$here/../../../../../LibreQuake}"
@@ -19,13 +20,17 @@ run() {
   blender -b "$1" --python-exit-code 1 --python "$TOOLS/$2" -- "${@:3}"
 }
 
-# The player: the built-in gun, axe and flash are cut out, their bones are the tags the weapons hang on. The rig's own
+# The player: the built-in gun, axe and flash are cut out, their bones are the tags the weapons hang on. The axe has a holster
+# on the back (`tag_axe_back`, a tag on `spine1` that the rig does not have) for while a gun is in the hand. The rig's gun and axe
+# bones are root bones; they are put under `spine1`, like the arms, so that the weapons follow when the game bends the spine. The rig's own
 # `flash` bone is not a tag: every weapon model has its muzzle tag, and the engine looks at the player's own first.
 run "$sources/player.mdl.blend" export_iqm.py \
   --output "$progs/player.iqm" --frames "$LQ/qcsrc/player.qc" --loop stand,axstnd,axrun,rockrun \
   --normals smooth --material-prefix progs/ \
   --strip-groups playergun,playeraxe,flash \
   --tag playergun=tag_weapon --tag playeraxe=tag_axe \
+  --reparent playergun=spine1 --reparent playeraxe=spine1 \
+  --tag-on spine1:tag_axe_back=-9,-1,10,50,0,0 \
   --colormap "$LQ/lq1/gfx/palette.lmp"
 
 # The weapons: a model name, the LibreQuake world model it is made from, and whether it has a muzzle.
