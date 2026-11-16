@@ -1,0 +1,9 @@
+{
+  "scale": 0.26,
+  "origin": [6, 64],
+  "blend": "additive",
+  "orientation": "oriented",
+  "repeat": 1,
+  "interpolate": true,
+  "colorKey": { "color": [0, 0, 0], "tolerance": 16 }
+}
