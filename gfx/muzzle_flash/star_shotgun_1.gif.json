@@ -1,7 +1,7 @@
 {
   "scale": 0.3,
   "blend": "additive",
-  "orientation": "parallel",
+  "orientation": "parallelOriented",
   "repeat": 1,
   "interpolate": true,
   "colorKey": { "color": [0, 0, 0], "tolerance": 16 }
